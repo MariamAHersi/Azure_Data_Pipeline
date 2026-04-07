@@ -1,79 +1,76 @@
-# Web Scraping & Data Engineering Pipeline Project
+# Azure Data Pipeline & Analytics Project
 
 ## Overview
-This project demonstrates an end-to-end data pipeline that involves web scraping, data storage, database management, and automated data ingestion. The pipeline extracts data from an e-commerce website, processes it, and stores it across relational and NoSQL databases.
+This project demonstrates the design and implementation of an end-to-end data pipeline using Microsoft Azure. The pipeline ingests raw data from a public GitHub source, processes and transforms it, and generates insights through analytics and visualisation tools.
 
-It highlights key data engineering concepts including data collection, transformation, storage, and pipeline automation.
+The project showcases core data engineering concepts including data ingestion, transformation, storage, and reporting within a cloud-based architecture.
 
 ---
 
 ## Tech Stack
-- Python (BeautifulSoup)
-- MySQL
-- Apache NiFi
-- MongoDB
+- Azure Data Lake Gen2
+- Azure Databricks
+- Azure Synapse Analytics
+- Power BI
+
+---
+
+## Architecture
+GitHub Dataset → Azure Data Lake Gen2 → Azure Databricks → Azure Data Lake Gen2 → Azure Synapse Analytics → Power BI
 
 ---
 
 ## Project Workflow
 
-### 1. Web Scraping
-- Scraped data engineering book listings from an e-commerce website
-- Extracted key attributes including title, author, publication year, rating, and price
-- Structured the data into CSV format for further processing
+### 1. Data Ingestion
+- Imported multiple raw datasets from a public GitHub repository
+- Stored raw data in Azure Data Lake Gen2 for scalable storage
 
-### 2. Data Storage (Relational Database)
-- Designed and implemented a MySQL database
-- Created tables and imported CSV data into the database
-- Ensured proper schema design for structured data storage
+### 2. Data Processing
+- Used Azure Databricks to clean and transform data
+- Applied data cleaning, filtering, and aggregation techniques
+- Structured the dataset for efficient querying and analysis
 
-### 3. Data Analysis
-- Developed SQL queries to retrieve and analyse stored data
-- Extracted insights such as pricing trends and rating distributions
+### 3. Data Storage
+- Stored processed data back into Azure Data Lake Gen2
+- Ensured data was organised and ready for downstream analytics
 
-### 4. Data Pipeline (Apache NiFi)
-- Built an automated dataflow using Apache NiFi
-- Ingested data from multiple sources and routed it into a database
-- Demonstrated workflow automation and data integration
-
-### 5. MongoDB Integration
-- Integrated MongoDB for flexible, NoSQL-based data storage
-- Demonstrated handling of semi-structured data
+### 4. Data Visualisation
+- Queried processed data using Azure Synapse Analytics
+- Developed dashboards in Power BI to present insights
+- Enabled clear communication of trends and key findings
 
 ---
 
 ## Key Features
-- End-to-end data pipeline from data collection to storage and analysis
-- Web scraping using Python and BeautifulSoup
-- Relational database design and querying (MySQL)
-- Automated data ingestion using Apache NiFi
-- NoSQL database integration with MongoDB
+- End-to-end ETL pipeline in a cloud environment
+- Scalable data storage using Azure Data Lake
+- Data transformation using distributed processing (Databricks)
+- Interactive dashboards for data-driven decision-making
 
 ---
 
 ## Key Learnings
-- Web scraping and data extraction techniques
-- Database design and SQL querying
-- Data pipeline automation using Apache NiFi
-- Differences between relational and NoSQL databases
-- End-to-end data handling and processing workflows
+- Understanding of cloud-based data architecture
+- Experience with ETL pipeline design and implementation
+- Data transformation and preparation techniques
+- Visualising data to support business insights
 
 ---
 
 ## Dataset
-- Scraped dataset of nearly 200 data engineering books from Packt Publishing (paperback & eBooks)
-- Includes key attributes: book title, author(s), publication year, star rating, and price
-- Structured into CSV and imported into relational and NoSQL databases for analysis and pipeline demonstration
+- Public dataset containing information on US legislators and executives
+- Includes structured information such as names, roles, states, party affiliation, and tenure
+- Used as raw input to demonstrate ingestion, transformation, and visualisation in a cloud-based pipeline
 
 ---
 
 ## Project Background
-This project was initially developed as part of a group assignment where tasks were divided across team members. To strengthen my understanding of the full data pipeline, I independently extended the project by exploring additional components including data ingestion, processing, and database integration.
+This project was initially developed as part of a university assignment. To deepen my understanding of data engineering workflows, I independently explored and reinforced each stage of the pipeline, gaining a broader end-to-end perspective.
 
 ---
 
 ## Future Improvements
-- Increase dataset size and automate scraping process
-- Enhance data cleaning and validation steps
-- Expand analytics with more complex SQL queries
-- Improve pipeline scalability and monitoring
+- Automate pipeline scheduling and orchestration
+- Expand dataset size and complexity
+- Enhance dashboard interactivity and KPIs
