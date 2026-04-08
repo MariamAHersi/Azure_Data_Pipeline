@@ -14,6 +14,30 @@ The project showcases core data engineering concepts including data ingestion, t
 - Power BI
 
 ---
+## Project Structure 
+
+azure-data-pipeline/
+│
+├── README.md
+│
+├── data/
+│   ├── raw/                        # Original ingested data from GitHub
+│   └── processed/                  # Transformed data ready for Synapse
+│
+├── ingestion/                      # Scripts for pulling data into Data Lake
+│
+├── transformation/                 # Databricks notebooks for cleaning & processing
+│
+├── analytics/                      # Synapse SQL queries and views
+│
+├── visualisation/                  # Power BI files (.pbix) and dashboard exports
+│
+├── docs/                           # Architecture diagrams, notes, writeups
+│   └── architecture.png
+│
+└── config/                         # Connection strings, environment configs (no secrets)
+
+---
 
 ## Architecture
 GitHub Dataset → Azure Data Lake Gen2 → Azure Databricks → Azure Data Lake Gen2 → Azure Synapse Analytics → Power BI
