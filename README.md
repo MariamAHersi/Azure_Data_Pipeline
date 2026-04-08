@@ -16,7 +16,6 @@ The project showcases core data engineering concepts including data ingestion, t
 ---
 ## Project Structure 
 
-azure-data-pipeline/
 ├── README.md
 
 ├── data/
