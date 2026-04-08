@@ -19,21 +19,28 @@ The project showcases core data engineering concepts including data ingestion, t
 azure-data-pipeline/
 │
 ├── README.md
+
 │
 ├── data/
 │   ├── raw/
 │   └── processed/
+
 │
 ├── ingestion/
+
 │
 ├── transformation/
+
 │
 ├── analytics/
+
 │
 ├── visualisation/ 
+
 │
 ├── docs/
 │   └── architecture.png
+
 │
 └── config/
 
