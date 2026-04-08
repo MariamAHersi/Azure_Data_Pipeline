@@ -21,21 +21,21 @@ azure-data-pipeline/
 ├── README.md
 │
 ├── data/
-│   ├── raw/                        # Original ingested data from GitHub
-│   └── processed/                  # Transformed data ready for Synapse
+│   ├── raw/
+│   └── processed/
 │
-├── ingestion/                      # Scripts for pulling data into Data Lake
+├── ingestion/
 │
-├── transformation/                 # Databricks notebooks for cleaning & processing
+├── transformation/
 │
-├── analytics/                      # Synapse SQL queries and views
+├── analytics/
 │
-├── visualisation/                  # Power BI files (.pbix) and dashboard exports
+├── visualisation/ 
 │
-├── docs/                           # Architecture diagrams, notes, writeups
+├── docs/
 │   └── architecture.png
 │
-└── config/                         # Connection strings, environment configs (no secrets)
+└── config/
 
 ---
 
