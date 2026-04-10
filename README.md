@@ -15,7 +15,7 @@ The project showcases core data engineering concepts including data ingestion, t
 
 ---
 ## Project Structure 
-
+```
 ├── README.md
 ├── data/
    ├── raw/
@@ -27,7 +27,7 @@ The project showcases core data engineering concepts including data ingestion, t
 ├── docs/
    └── architecture.png
 └── config/
-
+```
 ---
 
 ## Architecture
