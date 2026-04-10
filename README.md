@@ -17,22 +17,15 @@ The project showcases core data engineering concepts including data ingestion, t
 ## Project Structure 
 
 ├── README.md
-
 ├── data/
    ├── raw/
-  └── processed/
-
+   └── processed/
 ├── ingestion/
-
 ├── transformation/
-
 ├── analytics/
-
 ├── visualisation/ 
-
 ├── docs/
    └── architecture.png
-   
 └── config/
 
 ---
